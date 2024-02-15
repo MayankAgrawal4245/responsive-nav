@@ -1,0 +1,106 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+
+html body{
+    height : 100%;
+    width : 100%;
+}
+.navbar{
+    /* height: 70px; */
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    font-size: 12px;
+    font-family:  Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.nav-link ul{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #313847;
+    border-bottom: none;
+}
+.nav-link a:hover{
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+}
+.nav-link li{
+    list-style-type: none;
+}
+.search-btn-dashboard{
+    /* display: flex; */
+    
+}
+
+#search{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+    background-color: #797a7d36;
+    margin-right: 10px;
+}
+
+.btn{
+    font-size: 14px;
+    padding: 8px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    background: linear-gradient(to right, #07090c, #2e2e2e, #07090c);
+    color: white;
+    font-family: 900;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: linear-gradient(to right, #6d7181, #5d5f5d);
+}
+
+.icon{
+    font-size: 30px;
+    margin-left: 30px;
+    color: black;
+}
+
+/* -------------Media Query-------------- */
+
+@media only screen and (min-width: 850px) {
+    .icon{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 850px) {
+    .nav-link li{
+        display: none;
+    }
+    .icon{
+        display: inline-block;
+    }
+  }
+@media only screen and (max-width: 570px) {
+    #search{
+        width: 170px;
+    }
+  }
+@media only screen and (max-width: 433px) {
+    #search{
+        width: 130px;
+    }
+  }
+@media only screen and (max-width: 391px) {
+    #search{
+        width: 100px;
+    }
+  }
